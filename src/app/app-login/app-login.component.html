@@ -1,0 +1,13 @@
+
+<div class="form-center">
+    <div class="alert alert-danger" *ngIf="error">
+      <strong></strong> {{errorMsg}}
+    </div>
+    UserName- <input type="text" name="name" id="uname" [(ngModel)]="name"><br><br>
+    Password- <input type="password" [(ngModel)]="pwd"><br><br>
+    <button class="btn btn-primary" (click)="login(this.name,this.pwd)"> login</button> &emsp; &emsp;&emsp;&emsp;
+
+    <button class="btn btn-warning" (click)="signup()" style="margin-left: 20px;"> signup</button><br>
+  
+    you are typing user name ---{{name}}
+  </div>

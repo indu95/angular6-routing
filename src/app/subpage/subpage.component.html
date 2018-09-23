@@ -1,0 +1,26 @@
+<table class="table table-bordered" id='table1'>
+
+    <tr>
+      <td>
+        <app-comp1 (messageFired)="getMessage($event)">
+        </app-comp1>
+      </td>
+      <td>
+        <app-comp2 [msg]=parentMsg>
+        </app-comp2>
+      </td>
+
+    </tr>
+    <tr>
+      <td>
+        <app-comp3>
+        </app-comp3>
+      </td>
+      <td>
+        <app-comp4>
+        </app-comp4>
+      </td>
+
+    </tr>
+
+  </table>

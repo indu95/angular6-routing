@@ -1,0 +1,16 @@
+<div class="row" style="margin: 0%">
+    <div class="col-sm-2">
+      <div class="vertical-menu">
+        <a  class="active">Menu</a>
+        <a [routerLink]="['subpage']" class="">communication component</a>
+        
+        <a [routerLink]="['page2']">page2</a>
+        <a >link3</a>
+        <a >link4</a>
+      </div>
+    </div>
+    <div class="col-sm-9">
+        <router-outlet></router-outlet>
+      </div>
+  
+  </div>
